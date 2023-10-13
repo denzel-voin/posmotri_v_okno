@@ -46,6 +46,7 @@ ol {
   align-items: flex-end;
   justify-content: center;
   gap: 30px;
+  width: 95%;
 }
 
 .search-form {
@@ -65,12 +66,13 @@ ol {
   width: 100%;
   height: 100%;
   display: flex;
-  gap: 26px;
+  gap: 20px;
   flex-direction: column;
 }
 
 .result__video-container {
   width: 100%;
+  max-height: 388px;
   margin-bottom: 16px;
   position: relative;
   cursor: pointer;
@@ -78,12 +80,12 @@ ol {
 
 .result__video {
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
   object-position:center;
 }
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .content__video-card {
@@ -93,15 +95,12 @@ ol {
 
 .content__video-card-thumbnail {
   width: 194px;
-  object-fit: fill;
+  object-fit: cover;
   object-position:center;
 }
 
 .content__video-card-description-container {
   max-width: 200px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .search-form__fieldset-title {
@@ -117,7 +116,7 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 70.5px;
+  line-height: 71px;
 }
 
 .content__accent {
@@ -136,10 +135,16 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
   line-height: 16.20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -173,7 +178,6 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  /*width: 212px;*/
   justify-content: space-between;
 }
 
