@@ -215,6 +215,7 @@ ol {
   border: 1px solid currentColor;
   background-color: transparent;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 button:focus {
